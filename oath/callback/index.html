@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>TikTok OAuth Callback</title>
+<style>body{font:16px system-ui;margin:3rem}code{background:#eee;padding:.2rem .4rem;border-radius:6px}</style>
+<h1>Authorized</h1>
+<p>Copy the <b>code</b> below and use it to fetch your access token.</p>
+<div id="out"></div>
+<script>
+  const qs = new URLSearchParams(location.search);
+  const code = qs.get('code'); const state = qs.get('state');
+  document.getElementById('out').innerHTML =
+    `code: <code>${code||'(missing)'}</code><br>state: <code>${state||'(missing)'}</code>`;
+</script>
