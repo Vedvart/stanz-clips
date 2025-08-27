@@ -1,0 +1,2 @@
+Replace this file with the exact verification file that TikTok provides during URL verification.
+Name and content must match exactly. Place it at repo root and ensure it's publicly accessible at your GitHub Pages URL.
